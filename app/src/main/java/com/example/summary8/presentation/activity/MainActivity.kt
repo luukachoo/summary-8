@@ -8,6 +8,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.setupWithNavController
 import com.example.summary8.R
 import com.example.summary8.databinding.ActivityMainBinding
+import com.google.android.material.shape.CornerFamily
+import com.google.android.material.shape.MaterialShapeDrawable
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -20,8 +22,18 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-
+        styleBottomNav()
         init()
+
+    }
+
+    private fun styleBottomNav() = with(binding) {
+        val bottomNavBackground = bottomNavigationView.background as MaterialShapeDrawable
+        bottomNavBackground.shapeAppearanceModel =
+            bottomNavBackground.shapeAppearanceModel.toBuilder()
+                .setTopRightCorner(CornerFamily.ROUNDED, 30.0F)
+                .setTopLeftCorner(CornerFamily.ROUNDED, 30.0F)
+                .build()
     }
 
     private fun init() {
