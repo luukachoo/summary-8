@@ -22,18 +22,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        styleBottomNav()
         init()
 
-    }
-
-    private fun styleBottomNav() = with(binding) {
-        val bottomNavBackground = bottomNavigationView.background as MaterialShapeDrawable
-        bottomNavBackground.shapeAppearanceModel =
-            bottomNavBackground.shapeAppearanceModel.toBuilder()
-                .setTopRightCorner(CornerFamily.ROUNDED, 30.0F)
-                .setTopLeftCorner(CornerFamily.ROUNDED, 30.0F)
-                .build()
     }
 
     private fun init() {
