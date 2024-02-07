@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">summary 8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="favourites">favourites</string>
+    <string name="home">home</string>
+    <string name="chat">chat</string>
+    <string name="statistics">Statistics</string>
+    <string name="barcelona">Barcelona</string>
+    <string name="some_number">2500</string>
+    <string name="location">Gudauri</string>
+    <string name="price">$120</string>
+    <string name="welcome_to_favourites_fragment">Welcome to Favourites Fragment</string>
+    <string name="welcome_to_chat_fragment">Welcome to Chat Fragment</string>
+    <string name="click_message">clicked :)</string>
+</resources>
